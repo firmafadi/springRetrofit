@@ -1,20 +1,20 @@
 # springRetrofit
 
-##EXAMPLE :
+## EXAMPLE :
 
-*GET     : /user/
-*POST    : /user/
-*PUT     : /user/{id}
-*DELETE  : /user/{id}
-*Request Body : /user/respBody
+* GET     : /user/
+* POST    : /user/
+* PUT     : /user/{id}
+* DELETE  : /user/{id}
+* Request Body : /user/respBody
 
 ```
-${
-$   "id":"1"
-$
+{ 
+ "id":"1"
+{
 ```
 
-##RETROFIT EXAMPLE
+## RETROFIT EXAMPLE
 
-*GET     : /retrofit/{id}/{name}
-*POST	 : /retrofit
+* GET     : /retrofit/{id}/{name}
+* POST	 : /retrofit
