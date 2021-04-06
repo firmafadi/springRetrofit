@@ -64,12 +64,21 @@ public class UserController {
         userRepo.delete(user);
     }
 
-    // mengambil satu data user
+    // mengambil satu data user dengan costum json
     @GetMapping("/{id}")
-    public Optional<User> find(@PathVariable("id") Long id){
+    public ResponseEntity<Object> find(@PathVariable("id") Long id){
+        String message = "Success";
         Optional<User> user = userRepo.findById(id);
-        return user;
+        if(user.isEmpty())
+            message = "Data tidak ditemukan";
+
+        return ResponseHandler.generateResponse(
+                HttpStatus.OK,
+                false,
+                message,
+                user);
     }
+
 
     @RequestMapping("/respCostum")
     ResponseEntity<Object> getAllCountry() {
