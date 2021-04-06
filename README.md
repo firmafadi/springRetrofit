@@ -9,9 +9,9 @@
 * Request Body : /user/respBody
 
 ```
-${
-$   "id":"1"
-${
+{ 
+ "id":"1"
+{
 ```
 
 ## RETROFIT EXAMPLE
