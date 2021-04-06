@@ -9,6 +9,7 @@ import com.firma.student.service.RequestUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import com.firma.student.ResponseHandler;
@@ -17,6 +18,7 @@ import com.firma.student.ResponseHandler;
 // manandakan sebagai class controller dan membuat sebuah route dengan nama user.
 
 @RestController
+@Validated
 @RequestMapping("/user")
 public class UserController {
 
